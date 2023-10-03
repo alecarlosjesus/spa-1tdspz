@@ -1,9 +1,11 @@
+import Cabecalho from "./components/Cabecalho";
 
 export default function App(){
   document.title = "HOME";
 
   return(
     <div>
+      <Cabecalho/>
         <h1>App</h1>
         <div>
           <figure>

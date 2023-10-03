@@ -1,0 +1,19 @@
+
+.container{
+    background-color: #000000;
+    color: #fff;
+    height: 40px;
+
+    & ul{
+        list-style: none;
+        
+        & li{
+                display: inline;
+                padding: 0 10%;
+
+                
+
+            }   
+
+    }
+}
