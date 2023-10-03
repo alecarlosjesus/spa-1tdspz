@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../css/Cabecalho.module.css";
 
 export default function Cabecalho() {
@@ -6,9 +7,10 @@ export default function Cabecalho() {
         <header className={styles.container}>
             <nav>
                 <ul>
-                    <li><a href="#">Item-1</a></li>
-                    <li><a href="#">Item-2</a></li>
-                    <li><a href="#">Item-3</a></li>
+                    <li> <Link to="/">HOME</Link> </li>
+                    <li> <Link to="/produtos">PRODUTOS</Link> </li>
+                    <li> <Link to="/editar/produtos/1">PRODUTO-1</Link> </li>
+                    <li> <Link to="/editar/produtos/2">PRODUTO-2</Link> </li>
                 </ul>
             </nav>
         </header>

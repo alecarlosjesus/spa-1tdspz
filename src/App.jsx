@@ -1,4 +1,6 @@
+import { Outlet } from "react-router-dom";
 import Cabecalho from "./components/Cabecalho";
+import Rodape from "./components/Rodape";
 
 export default function App(){
   document.title = "HOME";
@@ -6,15 +8,8 @@ export default function App(){
   return(
     <div>
       <Cabecalho/>
-        <h1>App</h1>
-        <div>
-          <figure>
-            <figcaption>
-              Produtos em Oferta...
-            </figcaption>
-            <img src="/img/grocery_640.jpg" alt="Produtos diversos." />
-          </figure>
-        </div>  
+          <Outlet/>
+      <Rodape/> 
     </div>
   )
 }
